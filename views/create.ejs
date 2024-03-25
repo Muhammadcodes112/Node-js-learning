@@ -1,22 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+<link rel="stylesheet" href="style.css">
+<%- include('./partials/head.ejs') %>
+
 <body>
-    <nav>
-        <div class="site-title">
-             <a href="/">Blog NINJA</a>
-             <p>A Net Ninja Site</p>
-        </div>
-        <ul>
-         <li><a href="/">Blogs</a></li>
-         <li><a href="/about">About</a></li>
-         <li><a href="/blogs/create">New Blog</a></li>
-        </ul>
-     </nav>
+    
+    <%- include('./partials/nav.ejs') %>
 
      <div class="create-blog content">
         <form>
@@ -26,9 +15,10 @@
             <input type="text" id="Snippet" required>
             <label for="body">Blog Body:</label>
             <textarea id="body" required></textarea>
-            <button>Submit</button>
-        </form>
+            <button style="background-color: royalblue; color: white;">Submit</button>
+        </form> 
      </div>
 
+     <%- include('./partials/footer.ejs') %>
 </body>
 </html>
